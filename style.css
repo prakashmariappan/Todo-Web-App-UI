@@ -86,6 +86,10 @@ i{
     font-size: 24px;
     font-weight: normal;
 }
+.anchor{
+    text-decoration: none;
+    color: black;
+}
 /*home styling ends*/
 
 
@@ -137,11 +141,12 @@ i{
 .list-card .list-add{
     margin: 120px 0px 0px 270px;
 }
+
 /*listview styling ends*/
 
 /*addlistview styling starts*/
 .mainframe{
-    
+     filter: blur(8px);
 }
 .popup{
     background-color: white;
