@@ -1,15 +1,19 @@
 *{
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    
     position: relative;
 }
-/*home styling starts*/
-.home-container{
+a{
+    text-decoration: none;
+    color: black;
+}
+.max-width{
     margin: 50px 250px;
 }
-/*head*/
+/*home styling starts*/
+
 .head-container{
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,19 +40,19 @@ i{
     text-indent: 20px;
     font-size: 35px;
     font-weight: 300;
-
 }
+
 /*cards*/
 .card-cointainer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 65px 0px ;
+    flex-wrap: wrap;
+    
 }
 .card{
-    
+    margin: 25px 0px;
     width: 240px;
-    height: 330px;
     padding: 15px 0px;
     border: 1px solid #e74c3c;
     border-radius: 8px;
@@ -56,98 +60,18 @@ i{
 }
 .card-heading{
     font-size: 25px;
-    color: #e74c3c;
     font-weight: 400;
     margin-left: 35px;
     padding: 10px 0px;
+    
+}
+.ch{
     border-bottom: 2px solid darkgrey;
 }
-.completed-task{
-    margin-top: 30px;
-    margin-left: 35px;
-    color: red;
-    font-size: 27px;
-    font-weight: 100px;
-    text-decoration: solid line-through red 3px;
-}
-.check{
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    padding-left:10px ;
-    
-}
-.check input{
-    width: 20px;
-    height: 20px;
-}
-.check label{
-    margin-left: 10px;
-    font-size: 24px;
-    font-weight: normal;
-}
-.anchor{
-    text-decoration: none;
-    color: black;
-}
-/*home styling ends*/
-
-
-/*listview styling starts*/
-.list-container{
-    margin: 0px 300px;
-}
-
-.listview{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin: 60px 0px;
-
-}
-.listview h1{
-    
-    font-weight: bold;
-    font-size: 65px;
-}
-.listview hr{
-    border: 1px solid darkgrey;
-    width: 23%;
-}
-.list-content{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-   
-}
-.back-container{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 60px;
-}
-.back{
-    font-size: 35px;
-    margin-left: 15px;
-    color:grey;
-}
-.list-card{
-    padding: 50px 0px 0px 100px;
-    width: 330px;
-    height: 350px;
-    margin-bottom: 60px;
-}
-.list-card .list-add{
-    margin: 120px 0px 0px 270px;
-}
-
-/*listview styling ends*/
-
-/*addlistview styling starts*/
 .mainframe{
-     filter: blur(8px);
+    filter: blur(8px);
 }
+/*popup*/
 .popup{
     background-color: white;
     position:absolute;
@@ -179,6 +103,7 @@ i{
   border-radius: 5px;
   box-shadow: 3px 3px 4px lightgray;
 }
+
 .popup-button button{
     border: none;
     padding: 5px 15px;
@@ -188,8 +113,63 @@ i{
     border-radius: 20px;
     font-weight: normal;
     width: 100px;
+}
+.popup-button button a{
+ color: white;
+}
+
+@media screen  and (max-width: 480px) {
+    /*home styling starts*/
+    .max-width{
+        margin: 25px 10px ;
+    }
+    .title-box h1{
+        font-size: 35px;
+    }
+    .add-list-box h3{
+        display: none;
+    }
+    i{
+        font-size: 30px;  
+    }
+    .card-cointainer{
+        justify-content: left;
+    }
+    .card{
+        margin: 15px 0px;
+        width: 95%;
+        padding: 5px 0px;
+    }
+    .card-heading{
+        margin-left: 15px;
+        font-size: 18px;
+    }
+
+
+
+/*addlistview styling starts*/
+
+.popup{
+    position:absolute;
+    top: 40%;
+    left: 5%;
+    padding: 10px 10px;
+    width: 250px; 
     
 }
-.addtodo{
-    filter: blur(8px);
+.pu{
+    margin:10px 0px;
+}
+.popup-heading{
+    font-size: 15px;
+}
+.popup-input{
+    width:180px;
+    height: 30px; 
+}
+.popup-button button{
+    padding: 5px 15px;
+    font-size: 15px;
+    width: 70px;
+}
 }
