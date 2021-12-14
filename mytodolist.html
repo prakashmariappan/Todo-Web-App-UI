@@ -8,31 +8,33 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
         </style>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="listviewstyle.css">
         <script src="https://kit.fontawesome.com/7e705f1c61.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="list-container">
-        <!--head-->
-        <div class="listview">
-            <hr/>
-            <h1>MY Todo List</h1>
-            <hr/>
-        </div>
-        <div class="list-content">
-        <div class="back-container">
-           <a href="index.html"> <i class="fas fa-arrow-circle-left"></i></a>
-            <div class="back">Back</div>
-        </div>
-        <div class="card list-card">
-            <div class="card-heading">My Todo List</div>
-            <div class="completed-task">Completed Task</div>
-            <div class="check">
-                <input type="checkbox" name="checkbox">
-                <label for="checkbox">Pending Task</label>
+    <div class="max-width">
+        <div class="list-container">
+            <!--head-->
+            <div class="listview">
+                <hr/>
+                <h1>My Todo List</h1>
+                <hr/>
             </div>
-            <a href="addtodoitem.html"><i class="fas fa-plus-circle list-add"></i></a>
-    </div>
+            <div class="list-content">
+            <div class="back-container">
+               <a href="index.html"> <i class="fas fa-arrow-circle-left"></i></a>
+                <div class="back">Back</div>
+            </div>
+            <div class="card list-card">
+                <div class="card-heading">My Todo List</div>
+                <div class="completed-task">Completed Task</div>
+                <div class="check">
+                    <input type="checkbox" name="checkbox">
+                    <label for="checkbox">Pending Task</label>
+                </div>
+                <a href="mytodopopup.html"><i class="fas fa-plus-circle list-add"></i></a>
+        </div>
+        </div>
     </div>
 </body>
 </html>
